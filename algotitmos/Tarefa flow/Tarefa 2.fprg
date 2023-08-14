@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Eduardo.Salvador"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-23 03:34:17 "/>
+        <attribute name="created" value="RWR1YXJkby5TYWx2YWRvcjtDUEQwMDEtUEM7MjAyMy0wMy0yMzsiMDM6MzA6MzUgIjszMzE4"/>
+        <attribute name="edited" value="RWR1YXJkby5TYWx2YWRvcjtDUEQwMDEtUEM7MjAyMy0wMy0yMzsiMDM6MzQ6MTcgIjsyOzM0MzE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N1, N2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o Numero 1&quot;" newline="True"/>
+            <input variable="N1"/>
+            <output expression="&quot;Digite o numero 2&quot;" newline="True"/>
+            <input variable="N2"/>
+            <if expression="N1 = N2">
+                <then>
+                    <output expression="&quot;Os numeros s&#227;o iguais&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Os numeros s&#227;o diferentes&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

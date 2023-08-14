@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Eduardo.Salvador"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-23 03:58:25 "/>
+        <attribute name="created" value="RWR1YXJkby5TYWx2YWRvcjtDUEQwMDEtUEM7MjAyMy0wMy0yMzsiMDM6NTQ6MDQgIjszMzIw"/>
+        <attribute name="edited" value="RWR1YXJkby5TYWx2YWRvcjtDUEQwMDEtUEM7MjAyMy0wMy0yMzsiMDM6NTg6MjUgIjsyOzM0MzY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N1, N2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o numero 1&quot;" newline="True"/>
+            <input variable="N1"/>
+            <output expression="&quot;Digite o numero 2&quot;" newline="True"/>
+            <input variable="N2"/>
+            <if expression="N1 &gt; N2">
+                <then>
+                    <output expression="&quot;O maior numero &#233; &quot; &amp;  N1" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;O maior numero &#233; &quot; &amp;  N2" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

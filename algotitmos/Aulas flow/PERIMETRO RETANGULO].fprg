@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="EDUARDO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-15 04:38:47 "/>
+        <attribute name="created" value="RURVQVJETztERVNLVE9QLTNSQVBNRDk7MjAyMy0wMy0xNTsiMDQ6MzY6MDEgIjsyNzY0"/>
+        <attribute name="edited" value="RURVQVJETztERVNLVE9QLTNSQVBNRDk7MjAyMy0wMy0xNTsiMDQ6Mzg6NDcgIjsxOzI4ODQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="BASE, ALTURA, PERIMETRO" type="Real" array="False" size=""/>
+            <output expression="&quot;QUAL SUA BASE?&quot;" newline="True"/>
+            <input variable="BASE"/>
+            <output expression="&quot;QUAL SUA ALTURA?&quot;" newline="True"/>
+            <input variable="ALTURA"/>
+            <assign variable="PERIMETRO" expression="BASE + ALTURA + BASE + ALTURA"/>
+            <output expression="&quot;O PERIMETRO DO SEU RETANGULO &#201; &quot; &amp; PERIMETRO" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

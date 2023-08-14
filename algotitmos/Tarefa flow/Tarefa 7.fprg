@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Eduardo.Salvador"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-24 03:44:51 "/>
+        <attribute name="created" value="RWR1YXJkby5TYWx2YWRvcjtDUEQwMDEtUEM7MjAyMy0wMy0yNDsiMDE6NTU6MjkgIjszMzI3"/>
+        <attribute name="edited" value="RWR1YXJkby5TYWx2YWRvcjtDUEQwMDEtUEM7MjAyMy0wMy0yNDsiMDM6NDQ6NTEgIjsxOzM0MzA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x1, x2, a, b, c, delta, x" type="Real" array="False" size=""/>
+            <output expression="&quot;Qual o valor de A?&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Qual o valor de B?&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;Qual o valor de C?&quot;" newline="True"/>
+            <input variable="c"/>
+            <assign variable="delta" expression="(b*b) - 4*a*c"/>
+            <if expression="delta &gt; 0">
+                <then>
+                    <assign variable="x1" expression="(-b + sqrt(delta)) / (2 * a)"/>
+                    <assign variable="x2" expression="(-b - sqrt(delta)) /  (2 * a)"/>
+                    <output expression="&quot;A equa&#231;&#227;o possui duas ra&#237;zes reais e distintas, seus valores s&#227;o: &quot; &amp; x1 &amp; &quot; e &quot; &amp; x2" newline="True"/>
+                </then>
+                <else>
+                    <if expression="delta = 0">
+                        <then>
+                            <output expression="&quot;A equa&#231;&#227;o possui ra&#237;zes reais iguais&quot;" newline="True"/>
+                            <assign variable="x" expression="(-b + sqrt(delta)) / (2*a)"/>
+                            <output expression="&quot;A equa&#231;&#227;o possui ra&#237;zes reais iguais e seu valor &#233; &quot; &amp; x" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="delta &lt; 0">
+                                <then>
+                                    <output expression="&quot;A equa&#231;&#227;o n&#227;o possui ra&#237;zes reais&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

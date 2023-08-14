@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="EDUARDO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-15 04:16:48 "/>
+        <attribute name="created" value="RURVQVJETztERVNLVE9QLTNSQVBNRDk7MjAyMy0wMy0xNTsiMDM6NTU6MTAgIjsyNzY0"/>
+        <attribute name="edited" value="RURVQVJETztERVNLVE9QLTNSQVBNRDk7MjAyMy0wMy0xNTsiMDQ6MTY6NDggIjsxOzI4ODE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, C" type="Integer" array="False" size=""/>
+            <output expression="&quot;digite um numero&quot;" newline="True"/>
+            <input variable="A"/>
+            <output expression="&quot;DIGITE OUTRO NUMERO&quot;" newline="True"/>
+            <input variable="B"/>
+            <assign variable="C" expression="A + B"/>
+            <output expression="&quot;A SOMA &#201; &quot; &amp; C" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

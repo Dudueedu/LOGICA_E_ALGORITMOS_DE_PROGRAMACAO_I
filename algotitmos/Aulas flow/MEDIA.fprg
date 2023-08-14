@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="EDUARDO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-15 05:27:51 "/>
+        <attribute name="created" value="RURVQVJETztERVNLVE9QLTNSQVBNRDk7MjAyMy0wMy0xNTsiMDQ6Mzk6MzAgIjsyNzY5"/>
+        <attribute name="edited" value="RURVQVJETztERVNLVE9QLTNSQVBNRDk7MjAyMy0wMy0xNTsiMDU6Mjc6NTEgIjszOzI4ODA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="P1, P2, T, MEDIA" type="Real" array="False" size=""/>
+            <output expression="&quot;DIGITE NA ORDEM AS NOTAS DAS P1 E  P2 &quot;" newline="True"/>
+            <input variable="P1"/>
+            <input variable="P2"/>
+            <input variable="T"/>
+            <assign variable="MEDIA" expression="(P1 +  P2 + T) / 3"/>
+            <output expression="&quot;A M&#201;DIA &#201; &quot; &amp; MEDIA" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

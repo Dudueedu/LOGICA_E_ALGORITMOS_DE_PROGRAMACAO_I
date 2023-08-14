@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Eduardo.Salvador"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-23 03:56:56 "/>
+        <attribute name="created" value="RWR1YXJkby5TYWx2YWRvcjtDUEQwMDEtUEM7MjAyMy0wMy0yMzsiMDM6NTQ6MDQgIjszMzIw"/>
+        <attribute name="edited" value="RWR1YXJkby5TYWx2YWRvcjtDUEQwMDEtUEM7MjAyMy0wMy0yMzsiMDM6NTY6NTYgIjsxOzM0Mzc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N1, N2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o numero 1&quot;" newline="True"/>
+            <input variable="N1"/>
+            <output expression="&quot;Digite o numero 2&quot;" newline="True"/>
+            <input variable="N2"/>
+            <if expression="N1 % N2 = 0">
+                <then>
+                    <output expression="N1 &amp; &quot; &#233; divisivel por &quot; &amp; N2" newline="True"/>
+                </then>
+                <else>
+                    <output expression="N1 &amp; &quot; n&#227;o &#233; divisivel por &quot; &amp; N2" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

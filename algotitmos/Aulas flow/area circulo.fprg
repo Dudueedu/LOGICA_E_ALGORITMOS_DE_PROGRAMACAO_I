@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="EDUARDO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-15 04:35:59 "/>
+        <attribute name="created" value="RURVQVJETztERVNLVE9QLTNSQVBNRDk7MjAyMy0wMy0xNTsiMDQ6MjY6MjEgIjsyNzY1"/>
+        <attribute name="edited" value="RURVQVJETztERVNLVE9QLTNSQVBNRDk7MjAyMy0wMy0xNTsiMDQ6MzU6NTkgIjsxOzI4ODQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="P, AREA, RAIO" type="Real" array="False" size=""/>
+            <output expression="&quot;DIGITE O RAIO&quot;" newline="True"/>
+            <input variable="RAIO"/>
+            <assign variable="P" expression="3.14"/>
+            <assign variable="AREA" expression="P*RAIO^2"/>
+            <output expression="&quot;O RESULTADO &#201; &quot; &amp; AREA" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

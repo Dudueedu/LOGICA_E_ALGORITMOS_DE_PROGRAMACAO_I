@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Eduardo.Salvador"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-24 01:55:27 "/>
+        <attribute name="created" value="RWR1YXJkby5TYWx2YWRvcjtDUEQwMDEtUEM7MjAyMy0wMy0yNDsiMDE6NDA6MTIgIjszMzEz"/>
+        <attribute name="edited" value="RWR1YXJkby5TYWx2YWRvcjtDUEQwMDEtUEM7MjAyMy0wMy0yNDsiMDE6NTU6MjcgIjsxOzM0MzM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A1, B1, A, B" type="Integer" array="False" size=""/>
+            <output expression="&quot;Escreva A&quot;" newline="True"/>
+            <input variable="A1"/>
+            <output expression="&quot;Escreva B&quot;" newline="True"/>
+            <input variable="B1"/>
+            <if expression="A1 &gt; B1">
+                <then>
+                    <assign variable="B" expression="A1"/>
+                    <assign variable="A" expression="B1"/>
+                    <output expression="&quot; A e B s&#227;o respectivamente &quot; &amp; A &amp; &quot; e &quot; &amp; B" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="B" expression="B1"/>
+                    <assign variable="A" expression="A1"/>
+                    <output expression="&quot; A e B s&#227;o respectivamente &quot; &amp; A &amp; &quot; e &quot; &amp; B" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

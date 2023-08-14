@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Eduardo.Salvador"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-23 04:07:30 "/>
+        <attribute name="created" value="RWR1YXJkby5TYWx2YWRvcjtDUEQwMDEtUEM7MjAyMy0wMy0yMzsiMDQ6MDI6MzEgIjszMzE0"/>
+        <attribute name="edited" value="RWR1YXJkby5TYWx2YWRvcjtDUEQwMDEtUEM7MjAyMy0wMy0yMzsiMDQ6MDc6MzAgIjsxOzM0MjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="V" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o valor do produto&quot;" newline="True"/>
+            <input variable="V"/>
+            <if expression="V &gt;= 20">
+                <then>
+                    <assign variable="V" expression="V + 30/100*V"/>
+                    <output expression="&quot;O valor de venda &#233; &quot; &amp; V" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="V" expression="V + 45/100*V"/>
+                    <output expression="&quot;O valor de venda &#233; &quot; &amp; V" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Eduardo.Salvador"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-24 01:40:08 "/>
+        <attribute name="created" value="RWR1YXJkby5TYWx2YWRvcjtDUEQwMDEtUEM7MjAyMy0wMy0yNDsiMDE6MTI6NTUgIjszMzE5"/>
+        <attribute name="edited" value="RWR1YXJkby5TYWx2YWRvcjtDUEQwMDEtUEM7MjAyMy0wMy0yNDsiMDE6NDA6MDggIjsxOzM0MjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome" type="String" array="False" size=""/>
+            <declare name="faltas, n1, n2, n3, media" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite seu nome&quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="&quot;digite seu numero de faltas&quot;" newline="True"/>
+            <input variable="faltas"/>
+            <output expression="&quot;Escreva sua nota 1&quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Escreva sua nota 2&quot;" newline="True"/>
+            <input variable="n2"/>
+            <output expression="&quot;Escreva sua nota 3&quot;" newline="True"/>
+            <input variable="n3"/>
+            <assign variable="media" expression="(n1 + n2 + n3) / 3"/>
+            <if expression="faltas &lt;= (80*25) / 100">
+                <then>
+                    <if expression="media &gt;= 7">
+                        <then>
+                            <output expression="&quot;Aprovado&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Reprovado por m&#233;dia&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Reprovado por falta&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

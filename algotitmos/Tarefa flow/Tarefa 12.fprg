@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Eduardo.Salvador"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-23 04:20:47 "/>
+        <attribute name="created" value="RWR1YXJkby5TYWx2YWRvcjtDUEQwMDEtUEM7MjAyMy0wMy0yMzsiMDQ6MDc6MzcgIjszMzI1"/>
+        <attribute name="edited" value="RWR1YXJkby5TYWx2YWRvcjtDUEQwMDEtUEM7MjAyMy0wMy0yMzsiMDQ6MjA6NDcgIjsxOzM0Mjk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="S" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite seu salario&quot;" newline="True"/>
+            <input variable="S"/>
+            <if expression="S &gt; 3550">
+                <then>
+                    <assign variable="S" expression="S + S*10/100"/>
+                    <output expression="&quot;Seu novo salario &#233; &quot; &amp; S" newline="True"/>
+                </then>
+                <else>
+                    <if expression="S &gt;= 2400.01">
+                        <then>
+                            <assign variable="S" expression="S + S*15/100"/>
+                            <output expression="&quot;Seu novo salario &#233; &quot; &amp; S" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="S &gt;= 1100.01">
+                                <then>
+                                    <assign variable="S" expression="S + S*20/100"/>
+                                    <output expression="&quot;Seu novo salario &#233; &quot; &amp; S" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="S &gt;= 600.01">
+                                        <then>
+                                            <assign variable="S" expression="S + S*25/100"/>
+                                            <output expression="&quot;Seu novo salario &#233; &quot; &amp; S" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="S &lt;= 600">
+                                                <then>
+                                                    <assign variable="S" expression="S + S*30/100"/>
+                                                    <output expression="&quot;Seu novo salario &#233; &quot; &amp; S" newline="True"/>
+                                                </then>
+                                                <else/>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

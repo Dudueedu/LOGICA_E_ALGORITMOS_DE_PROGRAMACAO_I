@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="EDUARDO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-15 06:07:11 "/>
+        <attribute name="created" value="RURVQVJETztERVNLVE9QLTNSQVBNRDk7MjAyMy0wMy0xNTsiMDU6Mjc6NTMgIjsyNzcy"/>
+        <attribute name="edited" value="RURVQVJETztERVNLVE9QLTNSQVBNRDk7MjAyMy0wMy0xNTsiMDY6MDc6MTEgIjsyOzI4NzQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="LC, CC, AC, PLT, RM, TOTAL, QTDE, O" type="Real" array="False" size=""/>
+            <output expression="&quot;DIGITE OS SEGUINTES NA ORDEM: LARGURA DO COMODO, COMPRIMENTO DO COMODO, ALTURA DO COMODO, PRECO DA LATA DE TINTA,  RENDIMENTO EM METROS QUADRADOS DE CADA LATA DE TINTA&quot;" newline="True"/>
+            <input variable="LC"/>
+            <input variable="CC"/>
+            <input variable="AC"/>
+            <assign variable="O" expression="LC*AC*2 + CC*AC*2+LC*CC"/>
+            <output expression="O &amp; &quot; &#201; A AREA&quot;" newline="True"/>
+            <input variable="PLT"/>
+            <input variable="RM"/>
+            <assign variable="QTDE" expression="O / RM"/>
+            <assign variable="TOTAL" expression="PLT * QTDE"/>
+            <output expression="&quot;A QUANTIDADE DE LATAS &#201; &quot; &amp; QTDE &amp; &quot; &quot; &amp; &quot;E O VALOR TOTAL &#201; &quot; &amp; TOTAL" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

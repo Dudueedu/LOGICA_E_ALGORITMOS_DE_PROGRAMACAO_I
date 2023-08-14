@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Eduardo.Salvador"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-24 01:12:52 "/>
+        <attribute name="created" value="RWR1YXJkby5TYWx2YWRvcjtDUEQwMDEtUEM7MjAyMy0wMy0yNDsiMDE6MTA6MDAgIjszMzA3"/>
+        <attribute name="edited" value="RWR1YXJkby5TYWx2YWRvcjtDUEQwMDEtUEM7MjAyMy0wMy0yNDsiMDE6MTI6NTIgIjsxOzM0MjQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Senha" type="String" array="False" size=""/>
+            <output expression="&quot;Digite sua senha&quot;" newline="True"/>
+            <input variable="Senha"/>
+            <if expression="Senha = &quot;batatafrita&quot;">
+                <then>
+                    <output expression="&quot;Acesso permitido&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Voc&#234; n&#227;o tem acesso ao sistema&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
